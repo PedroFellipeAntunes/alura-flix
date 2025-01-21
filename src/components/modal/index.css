@@ -1,0 +1,83 @@
+/* Modal Overlay (full-screen) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 25px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001; /* Ensure content is above the overlay */
+    box-sizing: border-box;
+}
+
+.modal-content .button-close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-content .button-close button:hover {
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content section label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modal-content section input, .modal-content section textarea, .modal-content section select{
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+}
+
+.modal-content section textarea {
+    height: 100px;
+    resize: none
+}
+
+.modal-content .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content .buttons button {
+    flex: 1;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 3px;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+}

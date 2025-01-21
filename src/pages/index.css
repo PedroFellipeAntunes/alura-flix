@@ -1,0 +1,72 @@
+/* Página de Adicionar Novo Vídeo */
+.new-page {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.new-page h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.new-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.new-page label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.new-page input,
+.new-page textarea,
+.new-page select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 50px;
+}
+
+.new-page textarea {
+    height: 100px;
+    resize: none;
+}
+
+.new-page .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.new-page .buttons button {
+    flex: 1;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 3px;
+}
+
+.new-page .buttons button:hover {
+    cursor: pointer;
+}
+
+.new-page .buttons button[type="button"] {
+    background-color: #f44336; /* Cor de fundo para o botão Clear */
+}

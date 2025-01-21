@@ -1,0 +1,24 @@
+.group {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.group label {
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.group ul {
+    gap: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

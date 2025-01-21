@@ -1,0 +1,32 @@
+.card {
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    color: black;
+}
+
+.card-data img {
+    width: 430px;
+    height: 207px;
+}
+
+.card-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card-options button {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+}
