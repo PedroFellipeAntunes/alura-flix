@@ -2,7 +2,11 @@ import "./index.css"
 
 export const Banner = ({ watchCard, categories }) => {
     if (!watchCard) {
-        return null;  // Se watchCard for null, não renderiza o Banner
+        return (
+            <div className="banner">
+                <h1>No card found for Banner</h1>
+            </div>
+        )
     }
 
     const color = categories.find(([category]) => category === watchCard.category)?.[1] || "#FFFFFF";

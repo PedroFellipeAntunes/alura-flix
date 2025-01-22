@@ -17,9 +17,14 @@ export const NewCard = ({categories}) => {
       description: event.target.description.value,
     };
 
-    createCard(data);
+    const isCreated = createCard(data);
 
-    handleClear;
+    if (isCreated) {
+      handleClear(event);
+      alert("Card added sucessfully");
+    } else {
+      alert("Error when adding new card");
+    }
   };
 
   const handleClear = (event) => {

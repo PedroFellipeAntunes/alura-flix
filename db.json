@@ -1,52 +1,28 @@
 {
   "cards": [
     {
-      "title": "Acerola",
-      "category": "Front-End",
-      "image": "https://yt3.googleusercontent.com/VIx_EpHRGExy5J8qcZdyS5tWVn0AfbMt0lgIWRWrokM9XgHQtRjSFhjn5ILdj9O9e7JbMv1y=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "video": "https://www.youtube.com/embed/1L-x_DH3Uvg?si=fODUNONtKcDuPlQA",
-      "description": "Video de acerola",
-      "id": 0
-    },
-    {
-      "title": "Manor Lords Got a HUGE Update! Let's Start a New Village! | Ep. 1",
-      "category": "Front-End",
-      "image": "https://yt3.googleusercontent.com/SynSY4chJtiYIXfREXnd1PgV5FrFTdc0U6zunHK3ny-QIEDw7q5VFjorpOsGw9s-PxIP60Bnb9A=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "video": "https://www.youtube.com/embed/CHKhEfe6Y0s?si=C5i6FN0Y_owzR4wT",
-      "description": "Curso básico de React para iniciantes.",
-      "id": 1
-    },
-    {
-      "title": "Manor Lords Got a HUGE Update! Let's Start a New Village! | Ep. 1",
-      "category": "Front-End",
-      "image": "https://yt3.googleusercontent.com/SynSY4chJtiYIXfREXnd1PgV5FrFTdc0U6zunHK3ny-QIEDw7q5VFjorpOsGw9s-PxIP60Bnb9A=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-      "video": "https://www.youtube.com/embed/CHKhEfe6Y0s?si=C5i6FN0Y_owzR4wT",
-      "description": "Curso básico de React para iniciantes.",
-      "id": 5
-    },
-    {
-      "title": "Node.js para APIs",
+      "title": "Roadmap for Learning SQL",
       "category": "Back-End",
-      "image": "https://via.placeholder.com/150",
-      "video": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
-      "description": "Crie APIs com Node.js e Express.",
+      "image": "https://yt3.googleusercontent.com/NYeZBpbHMzUIz9kKHXOCMdK18kVhzyxsxBWQKwEz_RPYj8CU9UiEfax7zZmt2hTujURGs3Tw=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "video": "https://www.youtube.com/embed/yMqldbY2AAg?si=RV28vuAIMGB855LP",
+      "description": "Roadmap for Learning SQL",
       "id": 2
     },
     {
-      "title": "Flutter para Apps2",
+      "title": "How to Make an App in 8 Days (2024) - Full Walkthrough",
       "category": "Mobile",
-      "image": "https://via.placeholder.com/150",
-      "video": "https://www.youtube.com/watch?v=1ukSR1GRtMU",
-      "description": "Desenvolva apps para Android e iOS com Flutter.",
+      "image": "https://yt3.googleusercontent.com/qU11-2bIUSRKarxfJOTyuE1ZwPk6ASN1yLymgPR1sDicLNLZLyOy6WVxuqlpgh1s4vmBfr_ZrpM=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "video": "https://www.youtube.com/embed/K0t-RCSlasE?si=gSaG_JVyxJIlQnap",
+      "description": "Confidently learn how to make an app (no coding experience required). Used in classrooms and Apple stores, these videos are designed for beginners in mind to teach the fundamental skills for making apps on iOS.",
       "id": 3
     },
     {
-      "title": "test",
-      "category": "Back-End",
-      "image": "3",
-      "video": "4",
-      "description": "a",
-      "id": 6
+      "title": "INICIANDO COM REACT NATIVE e EXPO - Aula 01 | Curso de React Native + Expo",
+      "category": "Front-End",
+      "image": "https://yt3.googleusercontent.com/pMiMoAglcHwYzaYB9DsT-dqRqr0vX4FYOfKs9qdviTqwDIn_uG4Mz7B4YEcWx286jhub_07iNQQ=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "video": "https://www.youtube.com/embed/sUFZiaAulrA?si=mZbbXvsGWuUbf0KS",
+      "description": "Falaa jovens! No video de hoje falamos como funciona o react native e qual é seu proposito, abordamos também sobre o expo. ",
+      "id": 4
     }
   ]
 }

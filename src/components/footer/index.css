@@ -1,11 +1,9 @@
 footer {
-    background-color: white;  /* Fundo branco */
-    color: black;             /* Texto preto */
-    text-align: center;       /* Centraliza o texto */
-    padding: 25px;            /* Adiciona um padding para espaço interno */
-    font-size: 25px;          /* Define o tamanho da fonte */
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
     font-weight: bold;
-    bottom: 0;                /* Garante que fique na parte inferior */
-    left: 0;                  /* Garante que ocupe toda a largura */
-    width: 100%;              /* Ocupar toda a largura da tela */
+    bottom: 0;
 }

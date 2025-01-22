@@ -15,8 +15,10 @@ export const createCard = async (newCardData, setCards) => {
   try {
     //No need to return because it happens on another window
     await connectApi.createCard(newCardData);
+    return true;
   } catch (e) {
     console.error(e);
+    return false;
   }
 };
 

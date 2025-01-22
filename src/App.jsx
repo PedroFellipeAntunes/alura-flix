@@ -21,9 +21,17 @@ export const App = ({categories}) => {
   // Initialize watchCard with the first card after the data is loaded
   useEffect(() => {
     if (cards.length > 0) {
-      setWatchCard(cards[0]); // Set the first card as the initial watchCard
+      // Cria um mapa para priorizar as categorias baseado na ordem
+      const categoryPriority = categories.map(category => category[0]);
+  
+      // Ordena os cards com base na prioridade das categorias
+      const prioritizedCard = cards
+        .filter(card => categoryPriority.includes(card.category)) // Filtra os cards que possuem categorias válidas
+        .sort((a, b) => categoryPriority.indexOf(a.category) - categoryPriority.indexOf(b.category))[0]; // Ordena baseado na prioridade
+  
+      setWatchCard(prioritizedCard || cards[0]); // Define o card prioritário ou usa o primeiro como fallback
     }
-  }, [cards]); // Runs whenever cards changes
+  }, [cards, categories]); // Runs whenever cards changes
 
   // Function to update the currently watched card
   const changeWatchCard = (id) => {
@@ -52,33 +60,35 @@ export const App = ({categories}) => {
   };
 
   return (
-    <div>
+    <div className='App'>
       <Header />
       <Banner watchCard={watchCard} categories={categories}/>
-      <Group
-        openModal={openModal}
-        label="Front-End"
-        cards={cards.filter(card => card.category === "Front-End")}
-        deleteCard={handleDelete}
-        setWatchCard={changeWatchCard}
-        categories={categories}
+      <main>
+        <Group
+          openModal={openModal}
+          label="Front-End"
+          cards={cards.filter(card => card.category === "Front-End")}
+          deleteCard={handleDelete}
+          setWatchCard={changeWatchCard}
+          categories={categories}
+          />
+        <Group
+          openModal={openModal}
+          label="Back-End"
+          cards={cards.filter(card => card.category === "Back-End")}
+          deleteCard={handleDelete}
+          setWatchCard={changeWatchCard}
+          categories={categories}
+          />
+        <Group
+          openModal={openModal}
+          label="Mobile"
+          cards={cards.filter(card => card.category === "Mobile")}
+          deleteCard={handleDelete}
+          setWatchCard={changeWatchCard}
+          categories={categories}
         />
-      <Group
-        openModal={openModal}
-        label="Back-End"
-        cards={cards.filter(card => card.category === "Back-End")}
-        deleteCard={handleDelete}
-        setWatchCard={changeWatchCard}
-        categories={categories}
-        />
-      <Group
-        openModal={openModal}
-        label="Mobile"
-        cards={cards.filter(card => card.category === "Mobile")}
-        deleteCard={handleDelete}
-        setWatchCard={changeWatchCard}
-        categories={categories}
-        />
+      </main>
       <Footer />
 
       {/* Modal Overlay */}

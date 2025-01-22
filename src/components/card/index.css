@@ -30,3 +30,7 @@
     padding: 10px;
     width: 100%;
 }
+
+.card-options button:hover {
+    cursor: pointer;
+}
